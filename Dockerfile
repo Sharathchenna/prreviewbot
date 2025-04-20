@@ -17,4 +17,4 @@ COPY . .
 # Run the web service on container startup using Gunicorn and Uvicorn workers
 # Gunicorn manages processes, Uvicorn handles ASGI for FastAPI
 # The PORT variable is automatically set by Cloud Run.
-CMD ["gunicorn", "-k", "uvicorn.workers.UvicornWorker", "--bind", "0.0.0.0:$PORT", "receiver:app"]
+CMD gunicorn -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT receiver:app
