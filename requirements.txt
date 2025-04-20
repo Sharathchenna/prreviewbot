@@ -1,0 +1,7 @@
+# requirements.txt
+google-adk
+google-cloud-aiplatform
+fastapi
+uvicorn[standard] # Includes performance extras
+requests
+gunicorn # To manage uvicorn workers in production
