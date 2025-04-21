@@ -1,7 +1,7 @@
-# requirements.txt
-google-adk
-google-cloud-aiplatform
+# --- requirements.txt ---
 fastapi
-uvicorn[standard] # Includes performance extras
+uvicorn[standard]
+gunicorn
+google-adk
+google-cloud-aiplatform >= 1.38 # Explicitly add or ensure ADK pulls in a recent version
 requests
-gunicorn # To manage uvicorn workers in production
