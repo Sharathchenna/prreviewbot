@@ -63,7 +63,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-col sm:flex-row items-center gap-4 mb-20"
         >
-          <Link
+          {/* <Link
             href="#"
             className={cn(
               "group relative flex items-center justify-center gap-2 px-8 py-4 text-base font-semibold text-white rounded-full bg-slate-900 hover:bg-slate-800 transition-all shadow-[0_4px_14px_0_rgba(0,0,0,0.1)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.15)] hover:-translate-y-0.5"
@@ -71,7 +71,7 @@ export function Hero() {
           >
             <span>Start Free Trial</span>
             <ArrowRight className="size-4 group-hover:translate-x-1 transition-transform" />
-          </Link>
+          </Link> */}
 
           <Link
             href="https://github.com/sharathchenna/prreviewbot"
